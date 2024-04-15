@@ -1,0 +1,93 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#wrap{
+    width: 1500px;
+    height: 600px;
+    /* background-color: aqua; */
+}
+
+#header{
+    width: 100%;
+    height: 200px;
+    background-color: antiquewhite;
+    overflow: hidden; /* float된 자식 요소들이 있는 경우 높이 계산을 보정 */
+}
+
+#header_name{ 
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(254, 114, 16);
+    font-size: 120%;
+    overflow: hidden; /* float된 자식 요소들이 있는 경우 높이 계산을 보정 */
+}
+
+#header_name>h1{
+    text-align: center;
+}
+
+#header_btn{
+    float: left; /* 오른쪽 정렬을 위해 float: right 대신 사용 */
+    width: 130px;
+    height: 170px;
+    background-color: blanchedalmond;    
+}
+
+#play_btn{    
+    width: 100%;
+    height: 50%;
+    font-size: 200%;
+    font-weight: bolder;
+    color: crimson;
+}
+#play_add{    
+    width: 100%;
+    height: 40%;
+    font-size: 90%;
+    font-weight: bolder;
+    color: crimson;
+}
+
+#header_name #image_box {
+    float: left; /* 오른쪽 정렬을 위해 float: right 대신 사용 */
+    background-image: url("https://img.khan.co.kr/news/2022/08/23/l_2022082301001129300094621.jpg");
+    background-size: cover; /* 이미지가 요소의 크기에 맞게 조정되도록 함 */
+    background-position: center; /* 이미지가 요소의 중앙에 위치하도록 함 */
+    background-repeat: no-repeat; /* 이미지가 반복되지 않도록 함 */
+    width: 170px; /* 필요한 경우 설정 */
+    height: 170px; /* 필요한 경우 설정 */
+}
+
+#header>#rank_board{
+    float: left; /* 오른쪽 정렬을 위해 float: right 대신 사용 */
+    width: 80%;
+    height: 100%;
+    background-color: rgb(13, 156, 164);
+    font-weight: bold;
+    font-size: 115%;
+}
+
+#contents{    
+    width: 100%;
+    height: 600px;       
+}
+
+#contents>.rail{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(238, 234, 235);
+}
+
+#contents>.rail>.road{
+    position: relative;
+    margin: auto;   /*중앙 정렬*/
+    width: 100%;
+    height: 80%;
+    background-color: rgb(254, 140, 18);    
+}
